@@ -21,4 +21,4 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push smudacity/travis_ci-31-05
+  - docker push smudacity/travis_ci-31-05:latest
